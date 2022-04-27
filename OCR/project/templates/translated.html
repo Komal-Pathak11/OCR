@@ -38,61 +38,17 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Extraction</a></li>
-          <li><a class="nav-link scrollto" href="#translation">Translation</a></li>
+          <li><a class="nav-link scrollto active" href="/#hero" style="color: black;">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about" style="color: black;">Extraction</a></li>
+          <li><a class="nav-link scrollto" href="/#translation" style="color: black;">Translation</a></li>
 
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Welcome!!</h1><br>
-      <h2>We are here to help you with different languages.</h2>
-      <h2>Get any language into your known one.</h2>
-      <a href="#about" class="btn-get-started">Get Started</a>
-    </div>
-  </section><!-- End Hero Section -->
 
   <main id="main">
 
-    <!-- ======= Extraction Section ======= -->
-    <section id="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row about-containers">
-
-          <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">Text Extractor</h2>
-            <p>
-              Text extraction, often referred to as keyword extraction, uses machine learning to automatically scan text and extract relevant or core words and phrases from unstructured data.            </p>
-
-              <div class="file-upload">
-                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-
-                <div class="image-upload-wrap">
-                  <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-                  <div class="drag-text">
-                    <h3>Drag and drop a file or select add Image</h3>
-                  </div>
-                </div>
-                <div class="file-upload-content">
-                  <img class="file-upload-image" src="#" alt="your image" />
-                  <div class="image-title-wrap">
-                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
-          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100">
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Extraction Section -->
 
     <!-- ======= Translation Section ======= -->
     <section id="about">
@@ -105,8 +61,8 @@
               Translation is the communication of the meaning of a source-language text by means of an equivalent target-language text.
               <div class="form-group">
       <label for="comment"></label>
-      <textarea class="form-control" rows="8" id="comment">Type Text To Be Translated</textarea>
-      <a href="/#about" class="button">Translate</a>
+      <textarea class="form-control" rows="8" id="comment">{{ translated }}</textarea>
+      <a href="/#translation" class="button">Translate again</a>
     </div>
 
           </div>
@@ -121,9 +77,9 @@
      <br>
   </div>
       <div class="footer-ac">
-       <a href="#hero">-Home</a><br>
-       <a href="#about">-Extraction</a><br>
-       <a href="#translation">-Translation</a><br>
+       <a href="/#hero">-Home</a><br>
+       <a href="/#about">-Extraction</a><br>
+       <a href="/#translation">-Translation</a><br>
       <center><p style="width: 400px;">DESIGNED BY: Mehul Komal Shivani Vidhan</p></center>
    </div>
 
